@@ -21,8 +21,3 @@ let make = (~message, _children) => {
       (ReasonReact.string(message))
     </div>
 };
-
-let default =
-  ReasonReact.wrapReasonForJs(~component, jsProps =>
-    make(~message=jsProps##message, [||])
-  );
